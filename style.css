@@ -122,7 +122,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 dd {
@@ -371,7 +371,7 @@ template {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .alert-dismissible {
@@ -601,7 +601,7 @@ mark,
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -1368,7 +1368,7 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -1613,7 +1613,7 @@ input[type=button].btn-block {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -1825,7 +1825,7 @@ a.close.disabled {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .custom-file {
@@ -2340,7 +2340,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 
@@ -2379,7 +2379,7 @@ select.form-control:focus::-ms-value {
 .form-control-lg {
   height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3963,7 +3963,7 @@ textarea.form-control {
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -4613,10 +4613,10 @@ textarea.form-control {
 }
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.40625rem;
+  padding-bottom: 0.40625rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4654,7 +4654,7 @@ textarea.form-control {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -8792,7 +8792,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-light {
-  font-weight: 300 !important;
+  font-weight: 100 !important;
 }
 
 .font-weight-lighter {
@@ -8804,7 +8804,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
 }
 
 .font-weight-bolder {
@@ -8983,7 +8983,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.5;
 }
 .pagination-lg .page-item:first-child .page-link {
@@ -9602,13 +9602,81 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sidebar {
   min-width: 70px;
-  gap: 15rem;
+  gap: 10rem;
+}
+
+.dashboard {
+  overflow-y: visible;
+}
+.dashboard h1 {
+  font-size: 1.5rem;
+}
+.dashboard main {
+  background-color: rgba(194, 182, 182, 0.501);
+}
+.dashboard .card-section {
+  gap: 1rem;
 }
 
 .card {
   background-color: #fff;
-  width: 300px;
+  width: 30%;
+}
+.card .card-icon {
+  background-color: rgba(194, 182, 182, 0.501);
+}
+.card span {
+  font-weight: 100;
+}
+.card p {
+  font-weight: 100;
+}
+.card .card-count {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.product-table {
+  width: 65%;
+  height: 300px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.product-table th {
+  font-weight: 500;
+}
+.product-table .product-img {
+  width: 50px;
+  height: 50px;
+}
+
+.product-graph {
+  width: 34%;
+}
+.product-graph .graph-header .graph-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.product-graph .graph-body .graph-label {
+  width: 15px;
+  height: 15px;
+}
+.product-graph .graph-body .graph-legend {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.product-graph .graph-body .y-axis {
   gap: 10px;
+}
+.product-graph .graph-body .bar-chart {
+  gap: 40px;
+}
+.product-graph .graph-body .bar-chart div {
+  width: 10px;
+  height: 140px;
+}
+.product-graph .graph-body .x-axis {
+  gap: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

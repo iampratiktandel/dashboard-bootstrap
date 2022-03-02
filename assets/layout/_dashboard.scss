@@ -1,0 +1,15 @@
+.dashboard {
+  overflow-y: visible;
+
+  h1 {
+    font-size: $font-size-xl;
+  }
+
+  main {
+    background-color: $light-gray;
+  }
+
+  .card-section {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+.product-graph {
+  width: 34%;
+
+  .graph-header {
+    .graph-title {
+      font-size: $font-size-lg;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  .graph-body {
+    .graph-label {
+      width: 15px;
+      height: 15px;
+    }
+
+    .graph-legend {
+      font-size: $font-size-sm;
+      font-weight: $font-weight-bold;
+    }
+
+    .y-axis {
+      gap: 10px;
+    }
+    
+    .bar-chart {
+      gap: 40px;
+      div {
+        width: 10px;
+        height: 140px;
+      }
+    }
+
+    .x-axis {
+      gap: 42px;
+    }
+  }
+}

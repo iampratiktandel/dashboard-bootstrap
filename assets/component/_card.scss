@@ -1,5 +1,21 @@
 .card {
   background-color: $white;
-  width: 300px;
-  gap: 10px;
+  width: 30%;
+
+  .card-icon {
+    background-color: $light-gray;
+  }
+
+  span {
+    font-weight: $font-weight-light;
+  }
+
+  p {
+    font-weight: $font-weight-light;
+  }
+
+  .card-count {
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+  }
 }
