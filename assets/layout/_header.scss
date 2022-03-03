@@ -1,0 +1,9 @@
+.search-box {
+  width: 400px;
+
+  .form-control {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+}

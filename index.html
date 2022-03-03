@@ -15,17 +15,32 @@
   <header class="border-bottom">
     <nav class="navbar navbar-expand-lg navbar-light bg-light-gray">
       <div class="container-fluid">
-        <span class="bi bi-exclude mr-5"></span>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex col-4">
-            <input class="form-control bg-light border-0 rounded-0 me-2" type="search"
-              placeholder="Search for transactions, items, etc" aria-label="Search">
-            <button class="btn btn-primary text-light-gray rounded-0" type="submit">Search</button>
-          </form>
+        <div class="d-flex">
+          <span class="bi bi-exclude active mr-5"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div>
+            <form class="d-flex search-box">
+              <div class="input-group">
+                <div class="input-group-prepend bg-light border-0">
+                  <span class="input-group-text bi bi-search bg-light border-0"></span>
+                </div>
+                <input class="form-control bg-light border-0 rounded-0" type="search"
+                  placeholder="Search for transactions, items, etc" aria-label="Search">
+                <button class="btn btn-primary text-light-gray rounded-0" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <span class="bi bi-chat-dots mr-4"></span>
+          <span class="bi bi-bell mr-4"></span>
+          <img src="https://likewise-stage.azureedge.net/uploads/3eb6cf23-895b-45e9-b92c-5fb1b457dd04/bill-gates-profile-pic.jpg" 
+            alt="" width="30" height="30" class="rounded-circle border">
+          <span class="bi bi-chevron-down mr-2"></span>
         </div>
       </div>
     </nav>
@@ -36,7 +51,7 @@
     <aside class="sidebar bg-white d-flex flex-column justify-content-between h-100">
       <div>
         <div class="text-center p-3">
-          <span class="bi bi-ui-checks-grid"></span>
+          <span class="bi bi-ui-checks-grid active"></span>
         </div>
         <div class="text-center p-3">
           <span class="bi bi-cart-fill"></span>
@@ -63,7 +78,7 @@
       <main class="d-flex flex-column h-100 p-4">
         <h1>Dashboard</h1>
         <div class="d-flex flex-row justify-content-between card-section">
-          <div class="card bg-primary text-white py-2 px-3">
+          <div class="card bg-primary text-white py-3 px-3">
             <div class="d-flex justify-content-between">
               <span class="bi bi-eye p-2 card-icon"></span>
               <span class="bi bi-graph-up"></span>
@@ -74,7 +89,7 @@
               <p class="border-top pb-0">Start for 1 Jan 2021</p>
             </div>
           </div>
-          <div class="card py-2 px-3">
+          <div class="card pt-3 px-3">
             <div class="d-flex justify-content-between">
               <span class="bi bi-briefcase-fill p-2 card-icon"></span>
               <span class="bi bi-graph-up"></span>
@@ -85,7 +100,7 @@
               <p class="border-top pb-0 text-primary">+ Add New Product</p>
             </div>
           </div>
-          <div class="card py-2 px-3">
+          <div class="card pt-3 px-3">
             <div class="d-flex justify-content-between">
               <span class="bi bi-people-fill p-2 card-icon"></span>
               <span class="bi bi-graph-up"></span>
@@ -96,7 +111,7 @@
               <p class="border-top text-muted pb-0">New user noted every week</p>
             </div>
           </div>
-          <div class="card py-2 px-3">
+          <div class="card pt-3 px-3">
             <div class="d-flex justify-content-between">
               <span class="bi bi-cart-dash-fill p-2 card-icon"></span>
               <span class="bi bi-graph-up"></span>
@@ -112,84 +127,88 @@
         <div class="py-4">
           <div class="d-flex flex-row justify-content-between ">
             <div class="product-table bg-white">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col"></th>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Sold</th>
-                    <th scope="col">View</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="p-1">
-                    <th scope="row">1</th>
-                    <td>
-                      <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                    </td>
-                    <td class="text-truncate">New Mobile App UI Demo Test</td>
-                    <td class="text-primary">Active</td>
-                    <td>10</td>
-                    <td>320</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>
-                      <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                    </td>
-                    <td class="text-truncate">New Mobile App UI Demo Test</td>
-                    <td class="text-primary">Active</td>
-                    <td>10</td>
-                    <td>320</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>
-                      <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                    </td>
-                    <td class="text-truncate">New Mobile App UI Demo Test</td>
-                    <td class="text-primary">Active</td>
-                    <td>10</td>
-                    <td>320</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>
-                      <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                    </td>
-                    <td class="text-truncate">New Mobile App UI Demo Test</td>
-                    <td class="text-primary">Active</td>
-                    <td>10</td>
-                    <td>320</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>
-                      <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                    </td>
-                    <td class="text-truncate">New Mobile App UI Demo Test</td>
-                    <td class="text-primary">Active</td>
-                    <td>10</td>
-                    <td>320</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-wrapper p-3">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col"></th>
+                      <th scope="col">Product Name</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Sold</th>
+                      <th scope="col">View</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</th>
+                      <td>
+                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
+                      </td>
+                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                      <td>Active</td>
+                      <td>10</td>
+                      <td>320</td>
+                    </tr>
+                    <tr>
+                      <td>2</th>
+                      <td>
+                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
+                      </td>
+                      <td class="text-truncate">New Mobile App UI Demo Test App Demo</td>
+                      <td>Active</td>
+                      <td>10</td>
+                      <td>320</td>
+                    </tr>
+                    <tr>
+                      <td>3</th>
+                      <td>
+                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
+                      </td>
+                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                      <td>Active</td>
+                      <td>10</td>
+                      <td>320</td>
+                    </tr>
+                    <tr>
+                      <td>4</th>
+                      <td>
+                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
+                      </td>
+                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                      <td>Active</td>
+                      <td>10</td>
+                      <td>320</td>
+                    </tr>
+                    <tr>
+                      <td>4</th>
+                      <td>
+                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
+                      </td>
+                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                      <td>Active</td>
+                      <td>10</td>
+                      <td>320</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
 
             <div class="product-graph bg-white p-3">
               <div class="d-flex flex-column">
                 <div class="graph-header d-flex flex-row justify-content-between">
                   <span class="graph-title">Views & Sells</span>
-                  <span class="text-muted">This Week &dArr; </span>
+                  <span class="text-muted">This Week <span class="bi bi-chevron-down"></span> </span>
                 </div>
                 <div class="graph-body py-3">
-                  <div class="graph-label bg-success d-inline-block mr-2"></div><span class="graph-legend mr-2">Total Views</span>
-                  <div class="graph-label bg-danger d-inline-block mx-2"></div><span class="graph-legend">Total Sells</span>
+                  <div class="graph-label bg-success d-inline-block mr-2"></div><span class="graph-legend mr-2">Total
+                    Views</span>
+                  <div class="graph-label bg-danger d-inline-block mx-2"></div><span class="graph-legend">Total
+                    Sells</span>
                   <div class="d-flex flex-row pt-3">
-                    <div class="y-axis d-flex flex-column">
-                      <span>4k</span>
+                    <div class="y-axis d-flex flex-column border-right">
+                      <span class="pr-2">4k</span>
                       <span>3k</span>
                       <span>2k</span>
                       <span>1k</span>
@@ -205,7 +224,7 @@
                       <div class="bg-success d-inline-block"></div>
                     </div>
                   </div>
-                  <div class="x-axis d-flex flex-row pl-4">
+                  <div class="x-axis d-flex flex-row pl-5">
                     <span>M</span>
                     <span>T</span>
                     <span>W</span>

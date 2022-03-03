@@ -4,12 +4,62 @@
   max-height: 300px;
   overflow-y: scroll;
 
-  th {
-    font-weight: $font-weight-bold;
+  .table {
+    border-collapse: separate;
+    border-spacing:0 20px;
   }
 
+    th, td {
+      font-weight: $font-weight-bold;
+      border: none;
+      &:nth-child(1) {
+        max-width: 60px;
+      }
+      &:nth-child(2) {
+        max-width: 100px;
+      }
+      &:nth-child(3) {
+        max-width: 340px;
+      }
+      &:nth-child(4) {
+        max-width: 90px;
+      }
+      &:nth-child(5) {
+        max-width: 80px;
+      }
+  }
+
+  tbody {
+    tr {
+      border: none;
+      margin-bottom: 10px;
+      background-color: $light-gray;
+
+      &:hover {
+        background-color: $primary;
+        transition: all 0.3s ease-in;
+        td {
+          // &:not(:nth-child(4)) {
+          //   color: $gray;
+          // }
+          &:nth-child(4) {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    td {
+      vertical-align: middle;
+      border: none;
+      font-weight: $font-weight-bold;
+      &:nth-child(4) {
+        color: $primary;
+      }
+    }
+  } 
   .product-img {
     width: 50px;
-    height: 50px;
+    height: 60px;
   }
 }

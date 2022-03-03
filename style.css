@@ -9600,9 +9600,19 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
 }
 
+.search-box {
+  width: 400px;
+}
+.search-box .form-control:focus {
+  box-shadow: none !important;
+}
+
 .sidebar {
   min-width: 70px;
-  gap: 10rem;
+}
+
+.active {
+  color: #428EFE;
 }
 
 .dashboard {
@@ -9642,12 +9652,52 @@ a.text-dark:hover, a.text-dark:focus {
   max-height: 300px;
   overflow-y: scroll;
 }
-.product-table th {
+.product-table .table {
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+.product-table th, .product-table td {
   font-weight: 500;
+  border: none;
+}
+.product-table th:nth-child(1), .product-table td:nth-child(1) {
+  max-width: 60px;
+}
+.product-table th:nth-child(2), .product-table td:nth-child(2) {
+  max-width: 100px;
+}
+.product-table th:nth-child(3), .product-table td:nth-child(3) {
+  max-width: 340px;
+}
+.product-table th:nth-child(4), .product-table td:nth-child(4) {
+  max-width: 90px;
+}
+.product-table th:nth-child(5), .product-table td:nth-child(5) {
+  max-width: 80px;
+}
+.product-table tbody tr {
+  border: none;
+  margin-bottom: 10px;
+  background-color: rgba(194, 182, 182, 0.501);
+}
+.product-table tbody tr:hover {
+  background-color: #428EFE;
+  transition: all 0.3s ease-in;
+}
+.product-table tbody tr:hover td:nth-child(4) {
+  color: #fff;
+}
+.product-table tbody td {
+  vertical-align: middle;
+  border: none;
+  font-weight: 500;
+}
+.product-table tbody td:nth-child(4) {
+  color: #428EFE;
 }
 .product-table .product-img {
   width: 50px;
-  height: 50px;
+  height: 60px;
 }
 
 .product-graph {

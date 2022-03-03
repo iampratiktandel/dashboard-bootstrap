@@ -1,4 +1,7 @@
 .sidebar {
   min-width: 70px;
-  gap: 10rem;
+}
+
+.active {
+  color: $primary;
 }
