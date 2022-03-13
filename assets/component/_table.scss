@@ -1,39 +1,49 @@
-.product-table {
-  width: 65%;
-  height: 300px;
-  max-height: 300px;
-  overflow-y: scroll;
+.table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin-bottom: 0;
 
-  .table {
-    border-collapse: separate;
-    border-spacing:0 20px;
+  th, td {
+    &:nth-child(1) {
+      width: 30px;
+      max-width: 30px;
+    }
+    &:nth-child(2) {
+      width: 50px;
+      max-width: 50px;
+    }
+    &:nth-child(3) {
+      width: 180px;
+      max-width: 180px;
+    }
+    &:nth-child(4) {
+      width: 90px;
+      max-width: 90px;
+    }
+    &:nth-child(5) {
+      width: 80px;
+      max-width: 80px;
+    }
+    &:nth-child(6) {
+      width: 80px;
+      max-width: 80px;
+    }
   }
-
-    th, td {
+  
+  thead {
+    th {
+      padding: 0 0.75rem;
+      font-size: $font-size-base;
       font-weight: $font-weight-bold;
       border: none;
-      &:nth-child(1) {
-        max-width: 60px;
-      }
-      &:nth-child(2) {
-        max-width: 100px;
-      }
-      &:nth-child(3) {
-        max-width: 340px;
-      }
-      &:nth-child(4) {
-        max-width: 90px;
-      }
-      &:nth-child(5) {
-        max-width: 80px;
-      }
+    }
   }
 
   tbody {
     tr {
       border: none;
-      margin-bottom: 10px;
       background-color: $light-gray;
+      margin-bottom: 1rem;
 
       &:hover {
         background-color: $primary;
@@ -52,14 +62,16 @@
     td {
       vertical-align: middle;
       border: none;
-      font-weight: $font-weight-bold;
+      font-size: $font-size-base - 0.1;
+      font-weight: $font-weight-semibold;
       &:nth-child(4) {
         color: $primary;
       }
     }
-  } 
-  .product-img {
-    width: 50px;
-    height: 60px;
   }
+}
+
+.product-img {
+  width: 50px;
+  height: 60px;
 }

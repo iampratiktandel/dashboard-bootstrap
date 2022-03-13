@@ -1,38 +1,58 @@
 .product-graph {
-  width: 34%;
 
-  .graph-header {
     .graph-title {
-      font-size: $font-size-lg;
+      font-size: $font-size-base;
       font-weight: $font-weight-bold;
     }
-  }
 
-  .graph-body {
+    .graph-dropdown {
+      color: $gray;
+      font-weight: $font-weight-light - 100;
+      font-size: $font-size-base - 0.1;
+    }
+
     .graph-label {
       width: 15px;
       height: 15px;
     }
 
-    .graph-legend {
-      font-size: $font-size-sm;
-      font-weight: $font-weight-bold;
+    .view-box {
+      background-color: $light-blue;
     }
 
-    .y-axis {
-      gap: 10px;
+    .sell-box {
+      background-color: $orange;
+    }
+
+    .graph-legend {
+      font-size: $font-size-base - 0.1;
+      font-weight: $font-weight-semibold;
+    }
+
+    .y-axis, .x-axis {
+      span {
+        color: $gray;
+        font-size: $font-size-base - 0.1;
+        font-weight: $font-weight-semibold;
+      }
     }
     
     .bar-chart {
-      gap: 40px;
       div {
         width: 10px;
         height: 140px;
       }
+
+      .view-bar {
+        background-color: $light-blue;
+      }
+
+      .sell-bar {
+        background-color: $orange;
+      }
     }
 
-    .x-axis {
-      gap: 42px;
-    }
-  }
+    // .x-axis {
+    //   gap: 42px;
+    // }
 }

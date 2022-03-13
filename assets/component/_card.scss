@@ -1,21 +1,37 @@
 .card {
-  background-color: $white;
-  width: 30%;
+  border: none;
 
   .card-icon {
+    font-size: $font-size-lg;
     background-color: $light-gray;
   }
 
-  span {
-    font-weight: $font-weight-light;
+  .bi-graph-up {
+    font-size: $font-size-lg;
+  }
+  
+  .card-icon-primary {
+    color: $white;
+    background-color: rgba(248, 248, 248, 0.165);
   }
 
-  p {
-    font-weight: $font-weight-light;
+  .card-title {
+    margin-bottom: 0;
+    color: $gray;
+    font-size: $font-size-base;
+    font-weight: $font-weight-light - 100;
   }
 
   .card-count {
-    font-size: $font-size-xl;
-    font-weight: $font-weight-bold;
+    font-size: $font-size-xxl;  
+    font-weight: $font-weight-medium;
+  }
+
+  .card-footer {
+    padding: 0;
+    color: $gray;
+    background-color: transparent;
+    font-size: $font-size-base - 0.1;
+    font-weight: $font-weight-light - 100;
   }
 }

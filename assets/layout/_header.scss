@@ -1,3 +1,25 @@
+#header {
+  min-height: 70px;
+
+  .bi-exclude {
+    font-size: 2rem;
+  }
+
+  .bi-chat-dots,
+  .bi-bell  {
+    &:after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      color: $orange;
+      background-color: $orange;
+      position: absolute;
+      transform: translate(-2px, 50%);
+    }
+  }
+}
+
 .search-box {
   width: 400px;
 
@@ -5,5 +27,14 @@
     &:focus {
       box-shadow: none !important;
     }
+
+    &::placeholder {
+      color: $gray;
+      font-size: $font-size-sm;
+    }
   }
+}
+
+#header1 {
+  min-height: 60px;
 }

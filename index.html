@@ -11,220 +11,224 @@
 </head>
 
 <body>
-  <!-- Topbar -->
-  <header class="border-bottom">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-gray">
-      <div class="container-fluid">
-        <div class="d-flex">
-          <span class="bi bi-exclude active mr-5"></span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div>
-            <form class="d-flex search-box">
-              <div class="input-group">
-                <div class="input-group-prepend bg-light border-0">
-                  <span class="input-group-text bi bi-search bg-light border-0"></span>
-                </div>
-                <input class="form-control bg-light border-0 rounded-0" type="search"
-                  placeholder="Search for transactions, items, etc" aria-label="Search">
-                <button class="btn btn-primary text-light-gray rounded-0" type="submit">Search</button>
-              </div>
-            </form>
+  <div class="d-flex flex-column bg-dark h-100 w-100">
+    <div id="header" class="bg-white d-flex flex-row justify-content-around flex-shrink-0 border-bottom">
+      <div class="d-flex flex-grow-1 align-items-center">
+        <span class="bi bi-exclude active pl-4 pr-5"></span>
+        <div class="search-box">
+          <div class="input-group">
+            <div class="input-group-prepend bg-light border-0">
+              <span class="input-group-text bi bi-search bg-light border-0"></span>
+            </div>
+            <input class="form-control bg-light border-0 rounded-0" type="search"
+              placeholder="Search for transactions, items, etc" aria-label="Search">
+            <button class="btn btn-primary text-light-gray rounded-0" type="submit">Search</button>
           </div>
         </div>
+      </div>
+      <div class="d-flex flex-grow-1 justify-content-end align-items-center pr-4">
+        <span class="bi bi-chat-dots pr-4"></span>
+        <span class="bi bi-bell pr-4"></span>
         <div>
-          <span class="bi bi-chat-dots mr-4"></span>
-          <span class="bi bi-bell mr-4"></span>
-          <img src="https://likewise-stage.azureedge.net/uploads/3eb6cf23-895b-45e9-b92c-5fb1b457dd04/bill-gates-profile-pic.jpg" 
+          <img
+            src="https://likewise-stage.azureedge.net/uploads/3eb6cf23-895b-45e9-b92c-5fb1b457dd04/bill-gates-profile-pic.jpg"
             alt="" width="30" height="30" class="rounded-circle border">
-          <span class="bi bi-chevron-down mr-2"></span>
+          <span class="bi bi-chevron-down pl-1 pr-2"></span>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- /Topbar -->
-
-  <div class="d-flex h-100">
-    <aside class="sidebar bg-white d-flex flex-column justify-content-between h-100">
-      <div>
-        <div class="text-center p-3">
-          <span class="bi bi-ui-checks-grid active"></span>
+    </div>
+    <div class="bg-light d-flex flex-grow-1">
+      <div id="sidebar" class="bg-white d-flex flex-column flex-grow-0">
+        <div class="d-flex flex-column flex-grow-1 justify-content-start align-items-center">
+          <span class="bi bi-ui-checks-grid active py-3"></span>
+          <span class="bi bi-cart-fill py-3"></span>
+          <span class="bi bi-file-earmark-easel-fill py-3"></span>
+          <span class="bi bi-gear-fill py-3"></span>
         </div>
-        <div class="text-center p-3">
-          <span class="bi bi-cart-fill"></span>
-        </div>
-        <div class="text-center p-3">
-          <span class="bi bi-file-earmark-easel-fill"></span>
-        </div>
-        <div class="text-center p-3">
-          <span class="bi bi-gear-fill"></span>
+        <div class="d-flex flex-column flex-grow-1 justify-content-end align-items-center">
+          <span class="bi bi-exclamation-circle-fill py-4"></span>
+          <span class="bi bi-box-arrow-left pb-5"></span>
         </div>
       </div>
-
-      <div>
-        <div class="text-center p-3">
-          <span class="bi bi-exclamation-circle-fill"></span>
-        </div>
-        <div class="text-center p-3">
-          <span class="bi bi-box-arrow-left"></span>
-        </div>
-      </div>
-    </aside>
-
-    <div class="dashboard d-flex flex-column h-100 w-100">
-      <main class="d-flex flex-column h-100 p-4">
-        <h1>Dashboard</h1>
-        <div class="d-flex flex-row justify-content-between card-section">
-          <div class="card bg-primary text-white py-3 px-3">
+      <div id="dashboard" class="d-flex flex-column flex-grow-1 px-4 py-3">
+        <h1 class="p-0 pb-2">Dashboard</h1>
+        <div class="d-flex justify-content-between">
+          <div class="card bg-primary text-white h-100 w-100 mr-3 py-3 px-3">
             <div class="d-flex justify-content-between">
-              <span class="bi bi-eye p-2 card-icon"></span>
-              <span class="bi bi-graph-up"></span>
+              <span class="bi bi-eye-fill px-2 py-2 card-icon-primary"></span>
+              <span class="bi bi-graph-up text-white"></span>
             </div>
             <div class="d-flex flex-column pt-3">
-              <span>Total Views</span>
-              <span class="pb-3 card-count">300,000</span>
-              <p class="border-top pb-0">Start for 1 Jan 2021</p>
+              <span class="card-title text-white">Total Views</span>
+              <span class="pb-3 card-count">308.402</span>
+              <span class="border-top text-white pt-2 pb-0 card-footer">Start for 1 Jan 2021</span>
             </div>
           </div>
-          <div class="card pt-3 px-3">
+          <div class="card h-100 w-100 mr-3 py-3 px-3">
             <div class="d-flex justify-content-between">
-              <span class="bi bi-briefcase-fill p-2 card-icon"></span>
-              <span class="bi bi-graph-up"></span>
+              <span class="bi bi-briefcase-fill text-success px-2 py-2 card-icon"></span>
+              <span class="bi bi-graph-up text-danger"></span>
             </div>
             <div class="d-flex flex-column pt-3">
-              <span class="text-muted">Total Products</span>
+              <span class="card-title">Total Products</span>
               <span class="pb-3 card-count">10.820</span>
-              <p class="border-top pb-0 text-primary">+ Add New Product</p>
+              <span class="border-top pt-2 pb-0 card-footer text-primary">+ Add New Product</span>
             </div>
           </div>
-          <div class="card pt-3 px-3">
+          <div class="card h-100 w-100 mr-3 py-3 px-3">
             <div class="d-flex justify-content-between">
-              <span class="bi bi-people-fill p-2 card-icon"></span>
-              <span class="bi bi-graph-up"></span>
+              <span class="bi bi-people-fill text-primary px-2 py-2 card-icon"></span>
+              <span class="bi bi-graph-up text-success"></span>
             </div>
             <div class="d-flex flex-column pt-3">
-              <span class="text-muted">Total Users</span>
+              <span class="card-title">Total Users</span>
               <span class="pb-3 card-count">8.420</span>
-              <p class="border-top text-muted pb-0">New user noted every week</p>
+              <span class="border-top pt-2 pb-0 card-footer">New user noted every week</span>
             </div>
           </div>
-          <div class="card pt-3 px-3">
+          <div class="card h-100 w-100 py-3 px-3">
             <div class="d-flex justify-content-between">
-              <span class="bi bi-cart-dash-fill p-2 card-icon"></span>
-              <span class="bi bi-graph-up"></span>
+              <span class="bi bi-cart-dash-fill text-info px-2 py-2 card-icon"></span>
+              <span class="bi bi-graph-up text-success"></span>
             </div>
             <div class="d-flex flex-column pt-3">
-              <span class="text-muted">Total Sells</span>
+              <span class="card-title">Total Sells</span>
               <span class="pb-3 card-count">1.028.623</span>
-              <p class="border-top text-muted pb-0">Start for 1 Jan 2021</p>
+              <span class="border-top pt-2 pb-0 card-footer">Start for 1 Jan 2021</span>
             </div>
           </div>
         </div>
-
-        <div class="py-4">
-          <div class="d-flex flex-row justify-content-between ">
-            <div class="product-table bg-white">
-              <div class="table-wrapper p-3">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">No</th>
-                      <th scope="col"></th>
-                      <th scope="col">Product Name</th>
-                      <th scope="col">Status</th>
-                      <th scope="col">Sold</th>
-                      <th scope="col">View</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</th>
-                      <td>
-                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                      </td>
-                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>2</th>
-                      <td>
-                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                      </td>
-                      <td class="text-truncate">New Mobile App UI Demo Test App Demo</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>3</th>
-                      <td>
-                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                      </td>
-                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>4</th>
-                      <td>
-                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                      </td>
-                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>4</th>
-                      <td>
-                        <img src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740" alt="product-image" class="product-img">
-                      </td>
-                      <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <div class="d-flex justify-content-between flex-grow-1 pt-3">
+          <div class="bg-white product-table flex-grow-1 mr-3 ">
+            <div class="table-wrapper px-3">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col"></th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Sold</th>
+                    <th scope="col">View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr>
+                  <!-- <tr>
+                    <td>2</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>
+                      <img
+                        src="https://img.freepik.com/free-psd/website-presentation-mockup-isolated_359791-174.jpg?w=740"
+                        alt="product-image" class="product-img">
+                    </td>
+                    <td class="text-truncate">New Mobile App UI Demo Test App Demo Testing Abc</td>
+                    <td>Active</td>
+                    <td>10</td>
+                    <td>320</td>
+                  </tr> -->
+                </tbody>
+              </table>
             </div>
-
-            <div class="product-graph bg-white p-3">
-              <div class="d-flex flex-column">
-                <div class="graph-header d-flex flex-row justify-content-between">
+          </div>
+          <div class="bg-white d-flex flex-grow-1 px-3 py-2">
+            <div class="product-graph d-flex flex-grow-1">
+              <div class="d-flex flex-grow-1 flex-column">
+                <div class="d-flex flex-grow-1 justify-content-between pt-1">
                   <span class="graph-title">Views & Sells</span>
-                  <span class="text-muted">This Week <span class="bi bi-chevron-down"></span> </span>
+                  <span class="graph-dropdown">This Week <span class="bi bi-chevron-down pl-1"></span> </span>
                 </div>
-                <div class="graph-body py-3">
-                  <div class="graph-label bg-success d-inline-block mr-2"></div><span class="graph-legend mr-2">Total
-                    Views</span>
-                  <div class="graph-label bg-danger d-inline-block mx-2"></div><span class="graph-legend">Total
-                    Sells</span>
-                  <div class="d-flex flex-row pt-3">
-                    <div class="y-axis d-flex flex-column border-right">
-                      <span class="pr-2">4k</span>
-                      <span>3k</span>
-                      <span>2k</span>
-                      <span>1k</span>
-                      <span>0</span>
-                    </div>
-                    <div class="bar-chart border-bottom d-flex justify-content-between pl-4">
-                      <div class="bg-success d-inline-block"></div>
-                      <div class="bg-danger d-inline-block"></div>
-                      <div class="bg-success d-inline-block"></div>
-                      <div class="bg-danger d-inline-block"></div>
-                      <div class="bg-success d-inline-block"></div>
-                      <div class="bg-danger d-inline-block"></div>
-                      <div class="bg-success d-inline-block"></div>
+                <div class="d-flex align-items-baseline flex-grow-1">
+                  <div class="d-flex align-items-center">
+                    <div class="graph-label view-box mr-2"></div>
+                    <span class="graph-legend mr-3">Total Views</span>
+                    <div class="graph-label sell-box mx-2"></div>
+                    <span class="graph-legend">Total Sells</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-row flex-grow-1">
+                  <div class="d-flex flex-column justify-content-between flex-grow-0 y-axis">
+                    <span>4k</span>
+                    <span>3k</span>
+                    <span>2k</span>
+                    <span>1k</span>
+                    <span>0</span>
+                  </div>
+                  <div class="d-flex flex-grow-1 flex-column">
+                    <div class="bar-chart border-bottom d-flex flex-grow-1 justify-content-between pl-4">
+                      <div class="view-bar d-inline-block"></div>
+                      <div class="sell-bar d-inline-block"></div>
+                      <div class="view-bar d-inline-block"></div>
+                      <div class="sell-bar d-inline-block"></div>
+                      <div class="view-bar d-inline-block"></div>
+                      <div class="sell-bar d-inline-block"></div>
+                      <div class="view-bar d-inline-block"></div>
                     </div>
                   </div>
-                  <div class="x-axis d-flex flex-row pl-5">
+                </div>
+                <div class="d-flex flex-grow-1 x-axis">
+                  <div class="d-flex flex-grow-0 justify-content-between">
+                    <span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                  </div>
+                  <div class="d-flex flex-grow-1 justify-content-between">
                     <span>M</span>
                     <span>T</span>
                     <span>W</span>
@@ -238,9 +242,8 @@
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   </div>
 </body>
-
 </html>
