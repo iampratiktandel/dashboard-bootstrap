@@ -4438,13 +4438,13 @@ textarea.form-control {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-bottom: 1px solid #dee2e6;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
 .modal-header .close {
-  padding: 1rem 1rem;
+  padding: 1rem;
   margin: -1rem -1rem -1rem auto;
 }
 
@@ -9790,5 +9790,3 @@ h1 {
 .product-graph .bar-chart .sell-bar {
   background-color: #FF764A;
 }
-
-/*# sourceMappingURL=style.css.map */
